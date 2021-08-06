@@ -74,12 +74,12 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
+	'dsn'	=> 'sqlite:' .APPPATH. 'data.db',
 	'hostname' => '',
 	'username' => '',
 	'password' => '',
-	'database' => './application/data.db',
-	'dbdriver' => 'sqlite3',
+	'database' => '',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
